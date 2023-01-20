@@ -1,9 +1,11 @@
 # Go Programming Cheat Sheet
 
+## Boiler Plate Information
+
 Start every file with the package declaration/name
 
 ```go
-package <package name>
+package packageName
 ```
 
 Import statements come next ex.
@@ -15,6 +17,16 @@ import (
     "strconv"
 )
 ```
+
+Executing file needs to contain the main function.
+
+```go
+func main() {
+    // Main body of the program
+}
+```
+
+## Conditional Statements
 
 If, If Else, If Else If, and Switch Statements
 
@@ -36,6 +48,8 @@ default:
     // do this if none of the conditions are met
 }
 ```
+
+## Loops
 
 For looping Go only has the for construct, there are no while loops. to simulate a while loop look at the second example.
 
@@ -64,6 +78,8 @@ for i, v := range aSlice {
 }
 ```
 
+## Getting User Input
+
 For user input you can use ```go fmt.Scanln()``` when not using command line arguments. The following code example shows using ```fmt.Scanln()```
 
 ```go
@@ -74,3 +90,18 @@ fmt.Println("Your name is", name, "?\nHello, ", name)
 ```
 
 For command line arguments are stored in the  ```os.Args``` slice. ```os.Args[0]``` is always the name of the executable. The remaining arguments are what comes after the name of the executable and are separated by space characters unless in quotes.
+
+## Arrays & Slices
+
+The length of an array is found by the ```len()``` function.
+
+```go
+aSlice := []int{0, 2, -1, 1, 76, 42}
+sliceLength := len(aSlice) // should be 6
+```
+
+## Concurrency
+
+The concurrency model uses what are called **goroutines**; to create a goroutine use the ```go``` keyword followed by a predefined or anonymous function.
+
+**Channels** allow goroutines to communicate and exchange data.
