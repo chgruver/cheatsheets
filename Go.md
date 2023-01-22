@@ -105,3 +105,13 @@ sliceLength := len(aSlice) // should be 6
 The concurrency model uses what are called **goroutines**; to create a goroutine use the ```go``` keyword followed by a predefined or anonymous function.
 
 **Channels** allow goroutines to communicate and exchange data.
+
+## Converting from int to String
+
+```go
+input := strconv.Itoa(n)
+// FormatInt(int64ToConvert, Base (10, 8, 16, 2))
+input = strconv.FormatInt(int64(n), 10)
+// string() converts int into ASCII/Unicode character
+input = string(n)
+```
