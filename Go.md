@@ -115,7 +115,8 @@ input = strconv.FormatInt(int64(n), 10)
 // string() converts int into ASCII/Unicode character
 input = string(n)
 ```
-# Maps, Slices, Structures
+
+## Maps, Slices, Structures
 
 For making slices
 
