@@ -115,3 +115,27 @@ input = strconv.FormatInt(int64(n), 10)
 // string() converts int into ASCII/Unicode character
 input = string(n)
 ```
+# Maps, Slices, Structures
+
+For making slices
+
+```go
+aSlice := []int{}
+// or with the make() where first is array/slice type
+// second is the capacity of the array
+makeSlice := make([]int, 5)
+```
+
+For creating maps:
+
+```go
+// create a map using map literal
+m := map[string]int{
+    Key: Value
+}
+// or create a new empty map
+m = make(map[string]int)
+
+// delete items from a map
+delete(Map, key)
+```
