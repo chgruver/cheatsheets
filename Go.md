@@ -140,3 +140,24 @@ m = make(map[string]int)
 // delete items from a map
 delete(Map, key)
 ```
+
+## Regular Expressions
+
+|Expression|Description|
+|----------|-----------|
+| . | Matches any character||
+|*  | Means any number of times - cannot be used on its own|
+|?  | Zero or one time - cannot be used on its own|
+|+  | Means one or more times - cannot be used on its own|
+|^  | This denotes the beginning of the line|
+|^  | This denotes the end of the line|
+|[] | [] is for grouping characters|
+|[A-Z]| This means all characters from capital A to capital Z|
+|\d| Any digit 0-9|
+|\D| A non-digit
+|\w| Any word character: [0-9A-Za-z]|
+|\W| Any non-word character|
+|\s| A whitespace character|
+|\S| A non-whitespace character|
+
+Use escaped strings with the ` (backtick) for defining a regular expression.
