@@ -161,3 +161,13 @@ delete(Map, key)
 |\S| A non-whitespace character|
 
 Use escaped strings with the ` (backtick) for defining a regular expression.
+
+## Type Methods & Interfaces
+
+To define a type method:
+
+```go
+func (t TypeName) FunctionName(parameters) <returnValues> {
+    ...
+}
+```
