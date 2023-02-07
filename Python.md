@@ -38,4 +38,23 @@ cars.reverse() # reverses the order of the list
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 len(cars) # produces the length of the list cars
 
+numbers = list(range(1, 6))
+print(numbers) # [1, 2, 3, 4, 5]
+
+digits = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+min(digits) # >> 0
+max(digits) # >> 9
+sum(digits) # >> 45
+```
+
+## For Loops
+
+Python uses indention for blocks of code such as for loops.
+
+```python
+for item in item_list:
+    # do stuff
+
+for value in range(start, end):
+    # range goes from start to (end - 1)
 ```
