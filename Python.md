@@ -66,5 +66,35 @@ players = ['charles', 'martina', 'michael', 'florence', 'eli']
 print(players[0:3]) # prints the first three elements in the list
 print(players[1:4]) # prints the elements from index 1 to index 4
 # 'martina', 'michael', 'florence'
+print(players[:4]) # prints the first 4 elements in the list
+print(players[2:]) # prints all the elements from index 2 to the end
+print(players[-3:]) # same as previous example
+```
 
+slices can also be used in for loops line a standard list
+
+when working with lists use slices to copy a list
+```python
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:] # copies my_foods into freind_foods
+
+friend_foods.append('cannoli') # adds cannoli to friend_foods list
+my_foods.append('ice cream') # adds ice cream to my_foods list
+
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods # both variables point to the same list
+friend_foods.append('cannoli')
+my_foods.append('ice cream')
+# both variables point ot the list:
+# ['pizza;, 'falafel', 'carrot cake', 'cannoli', 'ice cream']
+```
+## Tuples
+
+Tuples are immutable lists
+
+```python
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
+my_tuple = (3,) # a one element tuple
 ```
