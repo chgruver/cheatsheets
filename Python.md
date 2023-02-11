@@ -58,3 +58,13 @@ for item in item_list:
 for value in range(start, end):
     # range goes from start to (end - 1)
 ```
+
+## Slices
+
+```python
+players = ['charles', 'martina', 'michael', 'florence', 'eli']
+print(players[0:3]) # prints the first three elements in the list
+print(players[1:4]) # prints the elements from index 1 to index 4
+# 'martina', 'michael', 'florence'
+
+```
