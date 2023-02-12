@@ -98,3 +98,28 @@ print(dimensions[0])
 print(dimensions[1])
 my_tuple = (3,) # a one element tuple
 ```
+
+## Conditionals
+
+```python
+car = 'bmw'
+car == 'bmw' # evaluates to True
+
+# conditionals are case sensitive
+car = 'Audi'
+car == 'audi' # evaluates to False
+car.lower() == 'audi' # converts car to lower case to evaluate True
+
+# Numerical Conditionals
+age = 21
+age == 21 # True
+age == 19 # False
+age != 21 # False
+age != 19 # True
+age < 21 # False
+age <= 21 # True
+age > 21 # False
+age >= 21 # True 
+```
+
+Other conditional keywords include ```and```, ```or```, ```in```, and ```not```
