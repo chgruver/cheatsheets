@@ -123,3 +123,15 @@ age >= 21 # True
 ```
 
 Other conditional keywords include ```and```, ```or```, ```in```, and ```not```
+
+## Dictionaries
+
+```python
+my_dictionary = { key: value, key2: value2, etc...}
+```
+
+THe ```del``` keyword is used to remove a key value pair from a my_dictionary
+
+```python
+del my_dictionary['key_to_remove']
+```
